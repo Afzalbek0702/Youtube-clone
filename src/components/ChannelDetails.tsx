@@ -8,7 +8,6 @@ const ChannelDetails = ({ items, id }: any) => {
       
    getChannelVideos(id).then((data) => setChannelVideos(data.items));
    },[])
-	console.log(channelVideos);
 
 	return (
 		<div className="bg-Primary text-white h-full overflow-y-scroll scrol">

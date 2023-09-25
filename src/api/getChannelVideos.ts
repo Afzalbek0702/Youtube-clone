@@ -1,6 +1,5 @@
 import axios from "axios";
 export const getChannelVideos = async (id: any) => {
-   console.log(id);
    
 	const options = {
 		method: "GET",
