@@ -1,13 +1,8 @@
 import { useState } from "react";
-import { Category, Feed, Navbar, Sidebar } from "../components";
+import {  Feed, Navbar, Sidebar } from "../components";
 
 const HomePage = ({ open, openHandler }: any) => {
-	const [category, setCategory] = useState("All");
-	console.log(category);
-
-	const selectCategory = (x: any) => {
-		setCategory(x);
-	};
+	const [category, setCategory] = useState<any>("All");
 	return (
 		<>
 			<Navbar openHandler={openHandler} open={open} />

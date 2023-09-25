@@ -1,7 +1,6 @@
 import { useState,useEffect } from "react";
-import ReactPlayer from "react-player";
 import { getChannelVideos } from "../api/getChannelVideos";
-import { ChannelVideos, VideoCard } from ".";
+import { ChannelVideos,  } from ".";
 
 const ChannelDetails = ({ items, id }: any) => {
 	const [channelVideos, setChannelVideos] = useState([]);
