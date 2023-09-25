@@ -1,13 +1,12 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import { getChannelVideos } from "../api/getChannelVideos";
-import { ChannelVideos,  } from ".";
+import { ChannelVideos } from ".";
 
 const ChannelDetails = ({ items, id }: any) => {
 	const [channelVideos, setChannelVideos] = useState([]);
-   useEffect(() => {
-      
-   getChannelVideos(id).then((data) => setChannelVideos(data.items));
-   },[])
+	useEffect(() => {
+		getChannelVideos(id).then((data) => setChannelVideos(data.items));
+	}, []);
 
 	return (
 		<div className="bg-Primary text-white h-full overflow-y-scroll scrol">

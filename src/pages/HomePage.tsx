@@ -1,8 +1,6 @@
-import { useState } from "react";
-import {  Feed, Navbar, Sidebar } from "../components";
+import { Feed, Navbar, Sidebar } from "../components";
 
 const HomePage = ({ open, openHandler }: any) => {
-	const [category, setCategory] = useState<any>("All");
 	return (
 		<>
 			<Navbar openHandler={openHandler} open={open} />
@@ -13,8 +11,7 @@ const HomePage = ({ open, openHandler }: any) => {
 						open ? "w-[100%] pl-24 md:pl-0" : "w-[calc(100%-240px)] md:w-full"
 					} h-[calc(100vh-56px)] md:w-full md:h-[calc(100vh-84px)]`}
 				>
-					{/* <Category categoryHandler={selectCategory} category={category} /> */}
-					<Feed category={category} />
+					<Feed />
 				</div>
 			</div>
 		</>
